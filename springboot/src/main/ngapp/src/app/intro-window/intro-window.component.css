@@ -1,0 +1,28 @@
+.tab-label{
+    background-color: #35495A;
+    border-radius: 3px 3px 0px 0px;
+    color: white;
+    flex: 1;
+    margin: 0;
+    padding: 7px 0 5px 7px;
+}
+.intro-text{
+    min-height: 720px;
+    padding: 20px;
+}
+.intro-tab{
+    background-color: lightblue;
+    color: rgb(73, 96, 170);
+    border-radius: 4px;
+    padding: 12px 5px 10px 5px;
+    margin: 0px 4px 10px 0px;
+    display: inline-block;
+    border: 1px solid lightsteelblue;
+    cursor: pointer;
+}
+span img{
+   width: 820px; 
+}
+img{
+    width: 700px;
+}

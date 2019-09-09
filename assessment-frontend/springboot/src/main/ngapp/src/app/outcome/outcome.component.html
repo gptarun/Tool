@@ -1,0 +1,93 @@
+<app-outcome-header (viewEvent)="receiveMessage($event)"></app-outcome-header>
+<!-- <ng-container *ngIf="outcomesByCategory.length > 0">
+  <small class="history-tab" *ngFor="let session of sessionHistory">{{outcomesByCategory[session.category][0].catName}}&nbsp;{{session.completedOn}}</small>
+</ng-container> -->
+<ng-container *ngIf="outcomeViews[0]">
+    <h2 class="loading">Generating results, please wait</h2>
+    <mat-spinner class="loading">
+    </mat-spinner>
+</ng-container>
+<ng-container *ngIf="false">
+<div class="outcome-container" *ngIf="outcomeViews[0] && outcomesByCategory.length > 0">
+  <h2>Here are the next steps for your team:</h2>
+  <button class="btn reset" (click)="resetToRecommended()">Reset to recommended</button> 
+  <div class="outcome-side-by-side">
+      <button class="btn btn-light" (click)="flip()">Toggle Actions/Charts</button> 
+    <div class="learning-list" >
+      
+    <div class="outcome-select" >
+      <h4>Select a category to populate the other lists.</h4>
+      <div class="outcome-select-category" *ngFor="let cat of outcomesByCategory; let j = index" (click)="setActiveCategory(cat)" [ngClass]="{'active': cat.active}">
+        <h4>{{cat[0].catName}}</h4>
+
+        <mat-checkbox *ngFor="let o of cat;let i = index" 
+          (click)="$event.stopPropagation()" 
+          [(ngModel)]="outcomeChecked[j][i]"
+          [disabled]='o.level == 0'>
+            {{o.compName}}
+        </mat-checkbox>
+
+      </div>
+    </div>
+  </div>
+    <div class="charts" [style.background-color]="ieBG" *ngIf="radar.length > 0" #learninglist>
+     
+      <div class="chart-side"  #ieChartFlip>
+          <h4>Select 'Toggle Actions/Charts' to switch between the spider charts and the recommended actions for the selected competencies</h4>
+        <ng-container *ngFor="let chart of radar; let i = index">
+          <canvas *ngIf="outcomesByCategory[i].active || default" mdbChart
+            [chartType]="chart.chartType"
+            [datasets]="chart.chartDatasets"
+            [labels]="chart.chartLabels"
+            [colors]="chart.chartColors"
+            [options]="chart.chartOptions"
+            [legend]="true"
+            (chartHover)="chart.chartHovered($event)"
+            (chartClick)="chart.chartClicked($event)">
+          </canvas>
+        </ng-container>
+      </div>
+      <ul class="list-group" [style.width]="ieWidth" #ieChartFlipList>
+          <h4>Click on one of the category groups on the left to show the recommended actions for the selected competencies</h4>
+            <ng-container *ngFor="let cat of outcomesByCategory; let j = index">
+              <ng-container  *ngFor="let o of cat; let i = index">
+                <div class="list-group-item" *ngIf="outcomeChecked[j][i] == true && cat.active">
+                  <h5 class="mb-1">{{o.compName}}</h5>
+                  <span [innerHTML]="o.outcomeText"></span>
+                </div>
+              </ng-container>
+            </ng-container>
+      </ul>
+    </div>
+    <div class="qa-list">
+      <h4>Models</h4>
+      <ul class="list-group no-transform" [style.width]="ieWidth">
+        <ng-container *ngFor="let cat of outcomesByCategory; let i = index">
+          <ng-container *ngFor="let mo of modelsByCategory[i]; let j = index">
+            <div class="list-group-item" *ngIf="outcomeChecked[i][j] == true && cat.active">
+              <span><b>{{mo.compName}}</b></span>
+              <span [innerHTML]="mo.outcomeText"></span>
+            </div>
+          </ng-container>
+        </ng-container>
+      </ul>
+    </div>
+    <div class="qa-list">
+      <h4>Responses</h4>
+      <ul class="list-group no-transform" [style.width]="ieWidth">
+        <ng-container *ngFor="let cat of outcomesByCategory; let i = index">
+          <ng-container *ngFor="let qa of answersByCategory[i]; let j = index">
+            <div class="list-group-item" *ngIf="outcomeChecked[i][qa.answer.competency] == true && cat.active">
+              <span><b>{{qa.question.description}}</b></span>
+              <span>{{(qa.choiceText ? qa.choiceText:"N/A")}}</span>
+            </div>
+          </ng-container>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</div>
+</ng-container>
+<app-outcome-responses [outcomesByCategory]='outcomesByCategory' [answersByCategory]='answersByCategory' [sessionHistory]='sessionHistory' *ngIf="outcomeViews[1]"></app-outcome-responses>
+<app-outcome-learning-catalog [outcomesByCategory]='outcomesByCategory' [answersByCategory]='answersByCategory' [sessionHistory]='sessionHistory' *ngIf="outcomeViews[2]"></app-outcome-learning-catalog>
+<app-outcome-summary [outcomes]='outcomes' [compSets]='compSets' *ngIf="outcomeViews[3]"></app-outcome-summary>

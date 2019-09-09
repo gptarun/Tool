@@ -1,0 +1,13 @@
+.tint{
+    position:fixed;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgba(0, 25, 44, 0.226);
+    background-size: cover;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-width: 100%;
+}
+

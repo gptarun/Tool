@@ -1,0 +1,12 @@
+<app-assessment-outcome-header></app-assessment-outcome-header>
+<h1>Select the area your team would like to evaluate.</h1>
+<div class="assess-group">
+<h4 class="tab-label">Evaluate</h4>
+<div class="assess-container">
+  
+  <div class="assess-column"*ngFor="let cat of categories; let i = index">
+    <div class="btn assess" (click)="startAssessment(i)"><span class="cat-label"><b>{{cat}}</b></span><span class="assess-text">Start >></span><div style="clear: both;"></div></div>
+    <div class="desc-box">&nbsp;Identify learning activities for:<br>&nbsp; <span [innerHTML]='competencies[i]'></span></div>
+  </div>
+</div>
+</div>

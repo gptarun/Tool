@@ -1,0 +1,6 @@
+<h4 class="tab-label">Introduction</h4>
+<div class="intro-text">
+  <small class="intro-tab" (click)="this.page = 0">How?</small>
+  <small class="intro-tab" (click)="this.page = 1">What, Why, and When?</small>
+  <span [innerHTML]="textComponents[page]"></span>
+</div>

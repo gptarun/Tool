@@ -1,0 +1,13 @@
+a{
+    color: white;
+    flex-grow:1;
+    padding: 4px 4px;
+    background: #0078D2;
+    border-radius: 5px;
+
+}
+.btn.btn-primary{
+    display:flex;
+    padding: 2px;
+    z-index: -1;
+}

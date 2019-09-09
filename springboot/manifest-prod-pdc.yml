@@ -1,0 +1,9 @@
+---
+applications:
+  - name: 
+    memory: 
+    buildpack: java_buildpack_offline-4_14
+    env:
+      SPRING_PROFILES_ACTIVE: 
+    path: 
+    services:

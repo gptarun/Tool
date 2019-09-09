@@ -1,0 +1,5 @@
+---
+applications:
+- name: one-assess-dev
+  memory: 256M
+  

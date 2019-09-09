@@ -1,0 +1,52 @@
+.comp-label {
+    font-size: 20px;
+    background-color: #D0DAE0;
+    padding-left: 15px;
+    border: 1px solid rgb(216, 215, 215);
+}
+
+.qa-list {
+    border-radius: 6px 6px 0px 0px;
+    margin-top: 20px;
+    display: flex;
+    flex: 1;
+    flex-grow: 2;
+    flex-direction: column;
+    background: whitesmoke;
+    padding-bottom: 1px;
+}
+
+.tab-label {
+    background-color: #35495A;
+    border-radius: 6px 6px 0px 0px;
+    color: white;
+    flex: 1;
+    margin: 0;
+    padding: 5px 0 5px 7px;
+    min-height: 40px;
+}
+
+.headers-align .mat-expansion-panel-header-title,
+.headers-align .mat-expansion-panel-header-description {
+    font-size: 20px;
+    flex-basis: 0;
+    color: white;
+    font-weight:bolder;
+}
+
+.headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    margin-left:10px;
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    overflow-wrap: break-word;
+    perspective: 600px;
+}

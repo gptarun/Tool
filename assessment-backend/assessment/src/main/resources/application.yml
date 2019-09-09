@@ -1,0 +1,38 @@
+logging:
+  level:
+    .: error
+    org.springframework.root: INFO
+    org.springframework: ERROR
+    com.mkyong: ERROR
+
+spring:
+  main:
+    banner-mode: "off"
+
+---
+
+spring:
+  profiles: default
+name: oneassessbackend
+env:
+  SPRING_PROFILES_ACTIVE: dev
+path: target/assessment-0.0.1-SNAPSHOT.jar
+
+
+---
+
+spring:
+  profiles: dev
+name: oneassessbackend
+env:
+  SPRING_PROFILES_ACTIVE: dev
+path: target/assessment-0.0.1-SNAPSHOT.jar
+
+---
+
+spring:
+  profiles: qa
+name: oneassessbackendQA
+env:
+  SPRING_PROFILES_ACTIVE: qa
+path: target/assessment-0.0.1-SNAPSHOT.jar

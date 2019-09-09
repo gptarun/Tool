@@ -1,0 +1,188 @@
+
+.outcome-container{
+    width: 95%;
+    margin: auto;
+}
+.container{
+    min-width: 1440px;
+}
+
+h2{
+    margin:20px 0 7px 0;
+    padding-bottom: 30px;
+    color: white;
+    
+}
+h4{
+    font-size: 22px;
+    margin: 12px;
+}
+.outcome-side-by-side{
+    display:flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.outcome-side-by-side > *{
+    border-radius: 5px;
+    
+}
+.learning-list{
+    
+    display: flex;
+    flex: 1;
+    flex-grow: 2;
+    flex-direction: column;
+    background: whitesmoke;
+    perspective: 600px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.list-group > *{
+    display: flex;
+    flex-direction:column;
+    flex-shrink: 1;
+    overflow-wrap: break-word;
+    perspective: 600px;
+}
+.list-group-item span{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.loading{
+    text-align: center;
+    margin: auto;
+    padding-top:15px;
+}
+.outcome-select{
+    backface-visibility: hidden;
+    border-radius: 5px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    perspective: 600px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    background: whitesmoke;
+    padding: 7px;
+    
+}
+.outcome-select > * > *{
+    margin-left: 10px;
+    padding: 3px;
+    font-size: 20px;
+}
+
+.outcome-select-category:hover{
+    background: rgb(205, 207, 211);
+}
+.outcome-select-category.active{
+    background: rgb(173, 175, 180);
+}
+.charts{
+    
+    flex: 1;
+    flex-grow: 3;
+    -ms-perspective: 1000;
+    vertical-align: middle;
+    margin:0 0 0 0;
+    background-color: rgb(212, 212, 212);
+    perspective: 600px;
+    transition: transform 1s;
+    -ms-transition: all 1s linear;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: flat;
+    -ms-backface-visibility: hidden;
+}
+.charts.is-flipped{
+    transform: rotateY(180deg);
+    -ms-transform: none;
+    
+}
+.charts > .list-group{
+    border-radius: 5px;
+    position: absolute;
+    flex-grow: 1;
+    backface-visibility: hidden;
+    -ms-width: 50%;
+    transform: rotateY(180deg);
+    perspective: 600px;
+    background-color: rgb(226, 226, 226);
+    padding-bottom: 10px;
+    height: 100%;
+}
+.charts .list-group .list-group-item span a{
+    word-break: break-all;
+    display: inline-block;
+}
+.chart-side{
+    backface-visibility: hidden;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(226, 226, 226);
+    perspective: 600px;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: flat;
+    
+}
+.chart-side.is-flipped{
+    -ms-transform: rotateY(180deg);
+}
+.list-group{
+    perspective: 600px;
+    -ms-transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.list-group.no-transform{
+    -ms-transform: none;
+}
+.list-group.is-flipped{
+    -ms-transform: rotateY(0deg);
+}
+.chart-side > *{
+    backface-visibility: hidden;
+}
+canvas{
+    backface-visibility: hidden;
+    perspective: 600px;
+}
+.btn.btn-light{
+    position: absolute;
+    transform: translate(50vh, -35px);
+}
+
+.btn.reset:hover{
+    background: whitesmoke;
+}
+
+.qa-list{
+    display: flex;
+    flex: 1;
+    flex-grow: 2;
+    flex-direction: column;
+    background: whitesmoke;
+}
+
+.qa-list{
+    z-index: 5;
+}
+
+.history-tab{
+    background-color: lightblue;
+    color: darkslateblue;
+    border-radius: 4px;
+    padding: 15px 5px 10px 5px;
+    margin-top: 50px;
+    border: 1px solid slategrey;
+    margin-right: 4px;
+    
+}

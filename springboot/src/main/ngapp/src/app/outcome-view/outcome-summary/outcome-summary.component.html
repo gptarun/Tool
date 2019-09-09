@@ -1,0 +1,14 @@
+<div class="qa-list">
+    <h4 class="tab-label">Summary Chart</h4>
+    <canvas  mdbChart
+      [chartType]="radarChart.chartType"
+      [datasets]="radarChart.chartDatasets"
+      [labels]="radarChart.chartLabels"
+      [colors]="radarChart.chartColors"
+      [options]="radarChart.chartOptions"
+      [legend]="true"
+      (chartHover)="radarChart.chartHovered($event)"
+      (chartClick)="radarChart.chartClicked($event)">
+    </canvas>
+  
+</div>

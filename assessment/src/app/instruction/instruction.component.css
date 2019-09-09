@@ -1,0 +1,14 @@
+.label{
+    background: rgb(125, 174, 190);
+    padding: 20px;
+}
+.btn.btn-success{
+    position: relative;
+    
+    bottom:25%;
+    right: 15%;
+    float: right;
+    background:#0078D2;
+    padding: .400rem 2.25rem;
+    font-size: 22px;
+}

@@ -1,0 +1,80 @@
+h1 {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.assess-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.assess-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    border-radius: 0px 0px 5px 5px;
+    padding: 7px 9px 7px 9px;
+    background-color: #35495A;
+}
+
+.btn.assess:hover {
+    background-color: #E1F0FA;
+    color: black;
+}
+
+.assess-column:nth-child(1) {
+    background-color: rgba(0, 70, 127, .75);
+}
+
+.assess-column:nth-child(2) {
+    background-color: rgba(250, 175, 0, .75);
+}
+
+.assess-column:nth-child(3) {
+    background-color: rgba(0, 185, 137, .75);
+}
+
+.assess-column:nth-child(4) {
+    background-color: rgba(77, 180, 250, .75);
+}
+
+.assess-column:nth-child(5) {
+    background-color: rgba(157, 166, 171, .75);
+}
+
+.assess-group {
+    margin-top: 40px;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.btn.assess {
+    flex: 1;
+    height: 45px;
+    min-height: 45px;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.cat-label {
+    float: left;
+    margin-left: 5px;
+}
+
+.desc-box {
+    background-color: white;
+    padding: 5px;
+    color: black;
+    border-radius: 0 0 5px 5px;
+}
+
+.assess-text {
+    float: right;
+}

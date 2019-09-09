@@ -1,0 +1,19 @@
+
+<div class="container" style="margin-top:30px;padding-top:5px">
+    <h1>What types of work does your team do?</h1>
+    <h3>(i.e. planned “feature” work, unplanned “operations” work, both)</h3>
+  <div class="alert alert-danger" style="padding:7px 20px 7px 20px" *ngIf="errorMessage">{{errorMessage}}</div>
+
+  <div class="container radio">
+    <label>
+      <div class="label-radio"><input type="radio" [(ngModel)]="apps" value="Feature" >Feature</div>
+    </label>
+    <label>
+        <div class="label-radio"><input type="radio" [(ngModel)]="apps" value="Operations">Operations</div>
+    </label>
+    <label>
+      <div class="label-radio"><input type="radio" [(ngModel)]="apps" value="Both">Both</div>
+  </label>
+  </div>
+</div>
+<button class="btn btn-success" (click)="appSubmit()">Next</button>

@@ -1,0 +1,47 @@
+<li class="dropdown" dropdown>
+    <button type="button" class="btn btn-primary" dropdownToggle role="button">
+      User Information </button>
+    <ul *dropdownMenu class="dropdown-menu">
+        <button type="button" class="btn btn-primary" ngbDropdownItem>Team: <span>{{team}}</span></button>
+        <button type="button" class="btn btn-primary" ngbDropdownItem>Email: <span>{{email}}</span></button>
+        <button type="button" class="btn btn-primary" ngbDropdownItem>Portfolio: <span>{{portfolio.portfolio}}</span></button>
+        <button type="button" class="btn btn-primary"><a
+              href="mailto:?subject=%20Feedback">Send
+              Feedback </a> </button>
+        <button type="button" class="btn btn-primary" style="color: white; margin-right: 6px; cursor: pointer;" (click)="logout()">Sign out
+      </button>
+    </ul>
+</li>
+
+
+<!---
+style="width: 100%; background-color: #0078D2">
+<span style="color: white; margin-left: 10px"> Team:</span> <span>{{team}}</span>
+<span style="color: white; margin-left: 10px"> Email:</span> {{email}}
+<span style="color: white; margin-left: 10px"> Portfolio:</span> {{portfolio}}
+<a href="mailto:?subject=%20Feedback">Send Feedback</a>
+<span style="color: white; margin-right: 6px; float:right; cursor: pointer;" (click)="logout()">Sign
+  out</span>
+
+  <div class="row">
+  <div class="col">
+      <div dropdown class="d-inline-block">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem>Team: <span>{{team}}</span></button>
+              <button ngbDropdownItem>Email: <span>{{email}}</span></button>
+              <button ngbDropdownItem>Portfolio: <span>{{portfolio}}</span></button>
+              <button> <a href="?subject=%20Feedback">Send
+                  Feedback </a> </button>
+              <button style="color: white; margin-right: 6px; cursor: pointer;" (click)="logout()">Sign
+                      out</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">One more separated link</a></li>
+-->

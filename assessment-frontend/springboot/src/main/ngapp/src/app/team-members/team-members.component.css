@@ -1,0 +1,31 @@
+.container{
+    background-size: cover;
+    background: #FAFBFB;
+    margin: 15px 0 15px 0;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.btn.btn-success{
+    
+}
+input{
+    padding: 10px 10px;
+    width: 95%;
+    border: solid 3px #EBEFF0;
+}
+
+.container.radio{
+    display:flex;
+    flex-direction:row;
+}
+.container.radio label{
+    display: flex;
+    flex-grow: 1;
+}
+.label-radio{
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,24 @@
+
+<div class="alert alert-danger" style="padding:7px 20px 7px 20px" *ngIf="fillMessage">{{fillMessage}}</div>
+<div class="container" style="margin-top:30px; padding-top: 5px">
+  <h3>How many people are on this product team?</h3>
+  <ul>
+    <li *ngFor="let job of jobs; let i = index">
+      <input type="number" min ="0" name={{job}} placeholder={{job}} [(ngModel)]="jobCount[i]">
+      <small class="alert alert-warning" style="padding:7px 20px 7px 20px"*ngIf="jobCount[i] < 1">Value must be greater than or equal to 1</small>
+    </li>
+  </ul>
+<div>
+  <h3>Is your team co-located or dispersed?</h3>
+    <div class="alert alert-danger" style="padding:7px 20px 7px 20px" *ngIf="radioMessage">{{radioMessage}}</div>
+  <div class="container radio">
+    <label>
+      <div class="label-radio"><input type="radio" [(ngModel)]="team_loc" value="colocated" >co-located</div>
+    </label>
+    <label>
+        <div class="label-radio"><input type="radio" [(ngModel)]="team_loc" value="dispersed"> dispersed</div>
+    </label>
+  </div>
+</div>
+  <button class="btn btn-success" (click)="teamSize()">Next</button>
+</div>

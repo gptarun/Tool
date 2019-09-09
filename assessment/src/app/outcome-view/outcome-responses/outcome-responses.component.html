@@ -1,0 +1,37 @@
+
+<div class="qa-list">
+  <h4 class="tab-label">Questions / Responses</h4>
+  <ul class="list-group no-transform" [style.width]="ieWidth">
+    <mat-accordion class="headers-align"> 
+      <ng-container *ngFor="let cat of outcomesByCategory; let i = index">
+       
+          <ng-container *ngIf="answersByCategory[i]">
+              <mat-expansion-panel [expanded]="sessionHistory[sessionHistory.length-1].category == i">
+                  <mat-expansion-panel-header [style.background]="catColors[cat[0].catName]">
+                    <mat-panel-title>
+                      {{cat[0].catName}}
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      <ng-container *ngFor="let session of sessionHistory">
+                        <span *ngIf="session.category == i && !session.oldData">
+                          {{session.completedOn}}
+                        </span>
+                      </ng-container>
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+              <ng-container *ngFor="let o of cat">
+                <div class="comp-label">{{o.compName}}</div>
+                <ng-container *ngFor="let qa of answersByCategory[i]; let j = index">
+                  <div class="list-group-item" *ngIf="o.compID == qa.answer.competency">
+                    <span><b>{{qa.question.description}}</b></span>
+                    <span>{{(qa.choiceText ? qa.choiceText:"N/A")}}</span>
+                  </div>
+                </ng-container>
+              </ng-container>
+            </mat-expansion-panel>
+          </ng-container>
+      </ng-container>
+    </mat-accordion>
+    
+  </ul>
+</div>

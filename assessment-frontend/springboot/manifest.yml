@@ -1,0 +1,10 @@
+---
+applications:
+  - name: 
+    memory: 
+    path: 
+    services:
+      - 
+    env:
+      GRANT_TYPE: 
+      SSO_IDENTITY_PROVIDERS:

@@ -1,0 +1,23 @@
+<div style="margin-top:30px;">
+  <div class="label">
+      <h2 class="display-4">Welcome to the One Assessment Beta!</h2>
+    </div>
+  <div class="jumbotron">
+    
+  <div class="container">
+    <h1 class="">{{currentHeader}}</h1>
+    <p>
+      
+    </p>
+  </div>
+  <div >
+    <h3 class="display-4"></h3>
+      {{currentBody}}
+  </div>
+  
+  </div>
+  </div>
+  <button class="btn btn-success" (click)="next()">
+    <span *ngIf="id < pageValue.length-1">Next</span>
+    <span *ngIf="id >= pageValue.length-1">Instructions</span>
+  </button>

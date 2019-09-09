@@ -1,0 +1,33 @@
+input{
+    padding: 10px 10px;
+    margin: 0 0 2px 0;
+    width: 95%;
+    border: solid 3px #E7ECEF;
+}
+
+button{
+    margin: 0 1px 0 0;
+}
+.container{
+    background-size: cover;
+    background: #FAFBFB;
+    margin: 15px 0 15px 0;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.container.radio{
+    display:flex;
+    flex-direction:row;
+}
+.container.radio label{
+    display: flex;
+    flex-grow: 1;
+}
+.label-radio{
+    font-size: 20px;
+    margin: auto;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}

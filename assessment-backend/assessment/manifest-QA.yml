@@ -1,0 +1,8 @@
+---
+applications:
+  - name: oneassessbackendQA
+    env:
+      SPRING_PROFILES_ACTIVE: qa
+    path: target/assessment-0.0.1-SNAPSHOT.jar
+    
+    

@@ -1,0 +1,28 @@
+.comp-label{
+    font-size: 20px;
+    padding-left: 15px;
+    border: 1px solid rgb(206, 206, 206);
+}
+.qa-list{
+    border-radius: 6px 6px 0px 0px;
+    margin-top: 20px;
+}
+.tab-label{
+    background-color: darkblue;
+    border-radius: 6px 6px 0px 0px;
+    color: white;
+    flex: 1;
+    margin: 0;
+    padding: 5px 0 5px 5px;
+}
+.list-group-item{
+    display: flex;
+    flex-direction:column;
+    flex-shrink: 1;
+    overflow-wrap: break-word;
+    perspective: 600px;
+}
+.list-group-item span{
+    margin-top: auto;
+    margin-bottom: auto;
+}

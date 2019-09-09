@@ -1,0 +1,48 @@
+<ng-container *ngIf="renderPage">
+<div class="container" style="border: solid 6px #E7ECEF; border-radius:5px; margin-top: 30px">
+
+<div class="jumbotron jumbotron-fluid">
+    
+      <h1 class="display-4">TOOL</h1>
+      
+    
+  </div>
+<div class="container" style="background:
+#0078D2; 
+">
+  <small class="alert alert-warning" *ngIf="infoForm.submitted && (infoForm.invalid || team.trim() == '' || !itPortfolio)">All fields must be filled with valid values to proceed.</small>
+  <form (ngSubmit)="!infoForm.invalid && team.trim() != '' && beginAssessment()" #infoForm="ngForm">
+    <div class="container text-box">
+      <input type="text" name="team" [(ngModel)]="team" required="required" placeholder="Enter Team Name *">
+    </div>
+    <div class="container text-box">
+      <input type="email" name="email" [(ngModel)]="email" required="required" ngModel email="true" placeholder="Enter E-mail *">
+    </div>
+    <div class="container">
+      <mat-form-field>
+        <mat-label>IT Portfolio</mat-label>
+        <mat-select [(value)]="itPortfolio" required="required">
+          <mat-optgroup *ngFor="let group of portGroups" [label]="group.vertical">
+            <mat-option *ngFor="let port of group.portfolio; let i = index" [value]="{portfolio:port, id:group.portId[i]}">
+              {{port}}
+            </mat-option>
+          </mat-optgroup>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <button class="btn btn-success absolute" type="submit">Next</button>
+  </form>
+
+  
+  <!-- <mat-form-field>
+    <mat-label>Select an option</mat-label>
+    <mat-select [(value)]="itPortfolio">
+      <mat-option>None</mat-option>
+      <mat-option value="option1">Option 1</mat-option>
+      <mat-option value="option2">Option 2</mat-option>
+      <mat-option value="option3">Option 3</mat-option>
+    </mat-select>
+  </mat-form-field> -->
+</div>
+</div>
+</ng-container>

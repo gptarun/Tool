@@ -1,0 +1,222 @@
+[
+	{
+		"Category": "Organization",
+		"Competency": "Role of Managers",
+		"Type": "Model",
+		"Content": "",
+		"1 - Limited": "Model1",
+		"2 - Implemented": "Model2",
+		"3 - Established": "Model3",
+		"4 - Integrated": "Model4",
+		"5 - Adaptive": "Model5"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Role of Managers",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "Learning1",
+		"2 - Implemented": "Learning2",
+		"3 - Established": "Learning3",
+		"4 - Integrated": "Learning4",
+		"5 - Adaptive": "Learning5"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Role of Managers",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "Learning",
+		"2 - Implemented": "Learning",
+		"3 - Established": "Learning",
+		"4 - Integrated": "Learning",
+		"5 - Adaptive": "Learning"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Role of Managers",
+		"Type": "Question",
+		"Content": "What is the role of managers of the team?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Decision Making",
+		"Type": "Model",
+		"Content": "",
+		"1 - Limited": "Model1",
+		"2 - Implemented": "Model2",
+		"3 - Established": "Model3",
+		"4 - Integrated": "Model4",
+		"5 - Adaptive": "Model5"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Decision Making",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "Learning1",
+		"2 - Implemented": "Learning2",
+		"3 - Established": "Learning3",
+		"4 - Integrated": "",
+		"5 - Adaptive": "Learning5"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Decision Making",
+		"Type": "Question",
+		"Content": "How are organizational decision made?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Decision Making",
+		"Type": "Question",
+		"Content": "What is your Product Owner's role in making decisions about the work?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Business/IT Relationship",
+		"Type": "Model",
+		"Content": "",
+		"1 - Limited": "Model1",
+		"2 - Implemented": "Model2",
+		"3 - Established": "Model3",
+		"4 - Integrated": "Model4",
+		"5 - Adaptive": "Model5"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Business/IT Relationship",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "Learning",
+		"2 - Implemented": "Learning",
+		"3 - Established": "Learning",
+		"4 - Integrated": "Learning",
+		"5 - Adaptive": "Learning"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Business/IT Relationship",
+		"Type": "Question",
+		"Content": "How does the business organization interact with the team?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Business/IT Relationship",
+		"Type": "Question",
+		"Content": "Does the business support your delivery transformation efforts (the focus on improving agile",
+		"1 - Limited": " DevOps and quality practices)?",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Business/IT Relationship",
+		"Type": "Question",
+		"Content": "How engaged are business stakeholders?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Knowledge Sharing",
+		"Type": "Model",
+		"Content": "",
+		"1 - Limited": "Model1",
+		"2 - Implemented": "Model2",
+		"3 - Established": "Model3",
+		"4 - Integrated": "Model4",
+		"5 - Adaptive": "Model5"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Knowledge Sharing",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "Learning",
+		"2 - Implemented": "Learning",
+		"3 - Established": "Learning",
+		"4 - Integrated": "",
+		"5 - Adaptive": "Learning"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Knowledge Sharing",
+		"Type": "Question",
+		"Content": "How is knowledge shared in the organization?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Structure & Process",
+		"Type": "Model",
+		"Content": "",
+		"1 - Limited": "Model1",
+		"2 - Implemented": "Model2",
+		"3 - Established": "Model3",
+		"4 - Integrated": "Model4",
+		"5 - Adaptive": "Model5"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Structure & Process",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "learning1",
+		"2 - Implemented": "Learning2",
+		"3 - Established": "learning3",
+		"4 - Integrated": "Learning4",
+		"5 - Adaptive": "learning5"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Structure & Process",
+		"Type": "Question",
+		"Content": "Does the organization support an agile way of working?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Organization",
+		"Competency": "Structure & Process",
+		"Type": "Question",
+		"Content": "Does the organization promote self-organizing and cross-functional teams?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	}
+]

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.4.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.assessment</groupId>
+	<artifactId>oneassessment</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>tool</name>
+	<description>TOOL UI</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security.oauth.boot</groupId>
+			<artifactId>spring-security-oauth2-autoconfigure</artifactId>
+			<version>2.0.0.RELEASE</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<configuration>
+						<addResources>true</addResources>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>1.5.0</version>
+					<executions>
+						<execution>
+							<id>exec-npm-install</id>
+							<phase>generate-sources</phase>
+							<configuration>
+								<workingDirectory>${project.basedir}/src/main/ngapp</workingDirectory>
+								<executable>cmd</executable>
+								<arguments>
+									<argument>/c</argument>
+									<argument>"npm install"</argument>
+								</arguments>
+							</configuration>
+							<goals>
+								<goal>exec</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>exec-npm-ng-build</id>
+							<phase>generate-sources</phase>
+							<configuration>
+								<workingDirectory>${project.basedir}/src/main/ngapp</workingDirectory>
+								<executable>cmd</executable>
+								<arguments>
+									<argument>/c</argument>
+									<argument>"ng build --configuration=${env}"</argument>
+								</arguments>
+							</configuration>
+							<goals>
+								<goal>exec</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>2.4.1</version>
+					<configuration>
+						<filesets>
+							<fileset>
+								<directory>${project.basedir}/src/main/resources/static</directory>
+								<followSymlinks>false</followSymlinks>
+							</fileset>
+						</filesets>
+					</configuration>
+				</plugin>
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.7</version>
+					<executions>
+						<execution>
+							<id>copy-resources</id>
+							<!-- here the phase you need -->
+							<phase>process-sources</phase>
+							<goals>
+								<goal>copy-resources</goal>
+							</goals>
+							<configuration>
+								<outputDirectory>${project.basedir}/src/main/resources/static</outputDirectory>
+								<resources>
+									<resource>
+										<directory>${project.basedir}/src/main/ngapp/dist</directory>
+										<includes>
+											<include>**</include>
+										</includes>
+									</resource>
+								</resources>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<env>dev</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+				<env>test</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>stage</id>
+			<properties>
+				<env>stage</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod-cdc</id>
+			<properties>
+				<env>prod-cdc</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod-pdc</id>
+			<properties>
+				<env>prod-pdc</env>
+			</properties>
+		</profile>
+	</profiles>
+
+</project>

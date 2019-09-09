@@ -1,0 +1,11 @@
+---
+applications:
+  - name:
+    memory: 
+    buildpack:
+    env:
+      SPRING_PROFILES_ACTIVE: 
+    path:
+    services:
+     
+    

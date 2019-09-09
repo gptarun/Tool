@@ -1,0 +1,9 @@
+---
+applications:
+- name: 
+  memory: 
+  env:
+    SPRING_PROFILES_ACTIVE: 
+  path: 
+  services:
+    

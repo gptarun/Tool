@@ -1,0 +1,45 @@
+form .container{
+    width:50%;
+    align-self: center;
+    text-align:center;
+    padding: .5rem;
+    margin: auto;
+}
+.jumbotron.jumbotron-fluid{
+    vertical-align: center;
+    background: #00467F;
+    background-clip: padding-box;
+    color: white;
+    padding: 64px 4px;
+    margin: 0;
+}
+.container{
+    background-size: cover;
+    background: #0078D2;
+    margin: 15px 0 15px 0;
+    padding: 0;
+}
+.alert.alert-warning{
+    padding: 9px 20px 9px 20px;
+    margin-bottom: 15px;
+}
+input{
+    flex-grow: 1;
+    padding: 0 10px;
+    width: 100%;
+}
+
+mat-form-field{
+    padding: 0 10px;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+}
+mat-form-field-wrapper{
+    padding: 0;
+   
+}
+
+h1{
+    margin-left: 4px;
+}

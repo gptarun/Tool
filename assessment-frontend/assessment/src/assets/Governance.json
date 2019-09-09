@@ -1,0 +1,189 @@
+﻿[
+	{
+		"Category": "Governance",
+		"Competency": "Capacity Planning and Road Mapping",
+		"Type": "Model",
+		"Content": "",
+		"1 - Limited": "model1",
+		"2 - Implemented": "model2",
+		"3 - Established": "model3",
+		"4 - Integrated": "model4",
+		"5 - Adaptive": "model5"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Capacity Planning and Road Mapping",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "learning1",
+		"2 - Implemented": "learning2",
+		"3 - Established": "learning3",
+		"4 - Integrated": "learning4",
+		"5 - Adaptive": "learning"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Capacity Planning and Road Mapping",
+		"Type": "Question",
+		"Content": "Is team capacity and supporting resource availability (PTO",
+		"1 - Limited": " training",
+		"2 - Implemented": " other) used to inform planning?",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Capacity Planning and Road Mapping",
+		"Type": "Question",
+		"Content": " Are Product Roadmaps reviewed and updated?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Dependency Management",
+		"Type": "Model",
+		"Content": "",
+		"1 - Limited": "model1",
+		"2 - Implemented": "model2",
+		"3 - Established": "model3",
+		"4 - Integrated": "model4",
+		"5 - Adaptive": "model5"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Dependency Management",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "",
+		"2 - Implemented": "",
+		"3 - Established": "learning",
+		"4 - Integrated": "learning",
+		"5 - Adaptive": "learning"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Dependency Management",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "learning1",
+		"2 - Implemented": "learning1",
+		"3 - Established": "learning2",
+		"4 - Integrated": "learning2",
+		"5 - Adaptive": ""
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Dependency Management",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "",
+		"2 - Implemented": "",
+		"3 - Established": "",
+		"4 - Integrated": "learning4",
+		"5 - Adaptive": ""
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Dependency Management",
+		"Type": "Question",
+		"Content": "How are dependencies managed?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Progress Status",
+		"Type": "Model",
+		"Content": "",
+		"1 - Limited": "model1",
+		"2 - Implemented": "model2",
+		"3 - Established": "model3",
+		"4 - Integrated": "model4",
+		"5 - Adaptive": "model5"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Progress Status",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "learning1",
+		"2 - Implemented": "learning2",
+		"3 - Established": "learning3",
+		"4 - Integrated": "",
+		"5 - Adaptive": ""
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Progress Status",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "learning1",
+		"2 - Implemented": "learning",
+		"3 - Established": "learning",
+		"4 - Integrated": "learning",
+		"5 - Adaptive": "learning"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Progress Status",
+		"Type": "Question",
+		"Content": "Do Information Radiators exist in team space that focus on defined metrics and success criteria?",
+		"1 - Limited": "and",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Measurement",
+		"Type": "Model",
+		"Content": "",
+		"1 - Limited": "model1",
+		"2 - Implemented": "model2",
+		"3 - Established": "model3",
+		"4 - Integrated": "model4",
+		"5 - Adaptive": "model5"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Measurement",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "learning1",
+		"2 - Implemented": "learning2",
+		"3 - Established": "learning3",
+		"4 - Integrated": "learning4",
+		"5 - Adaptive": "learning"
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Measurement",
+		"Type": "Learning",
+		"Content": "",
+		"1 - Limited": "learning1",
+		"2 - Implemented": "learning2",
+		"3 - Established": "learning3",
+		"4 - Integrated": "learning4",
+		"5 - Adaptive": ""
+	},
+	{
+		"Category": "Governance",
+		"Competency": "Measurement",
+		"Type": "Question",
+		"Content": "How do you measure your team’s performance?",
+		"1 - Limited": "ans",
+		"2 - Implemented": "ans",
+		"3 - Established": "ans",
+		"4 - Integrated": "ans",
+		"5 - Adaptive": "ans"
+	}
+]
